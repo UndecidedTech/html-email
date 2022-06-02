@@ -1,412 +1,457 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWB3wTyCg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWCXwT.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWB3wTyCg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWCXwT.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamC2QX.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBimCw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-.update:hover {
-  text-decoration: underline;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWB3wTyCg.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWCXwT.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWB3wTyCg.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: italic;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWCXwT.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamC2QX.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBimCw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    .update:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body style="margin: 0; padding: 0; background-color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-    <center style="width: 100%;">
-        <div style="max-width: 600px; background-color: #FFFFFF;">
-            <div style="text-align: left;">
-                <div style="background-color: #003E96; padding:10px;">
-                    <img style="border: 0; height: 52.63px; width: 93px; padding-left: 31px;" src="https://i.ibb.co/W2ZJfgS/Union.png" alt="DMG-Pro" width="93" height="52.63">
-                </div>
-            </div>
-            <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0 35px 0 35px; padding: 20px 0 30px 0; border-bottom: 2px solid #BDBDBD;">
-                <tr>
-                    <td colspan="2">
-                        <div style="width: 70%;">
-                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 500; font-size: 34px;">You’ve been selected to join DMG Pro</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 40%; padding-right: 21px;">
-                        <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                            You’ve been recognized as a top performer in DMG! We are excited to have you onboard onto our brand-new platform built from the ground up with you, our provider, in mind.
-                        </span>
-                        <div style="padding-top: 20px;">
-                            <a href="https://dmgpro.com/?provider={{provider_id}}" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin-right: 19px;">
-                                Sign Up
-                            </a>
-                            <a href="https://dmgpro.com/providers" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500;">
-                                Learn More
-                            </a>
-                        </div>
-                    </td>
-                    <td style="width: 30%;">
-                        <img src="https://i.ibb.co/dWhWHzd/portrait-engineering-with-helmet-safety-unifrom-standing-factory-industrial-worker.jpg" style="border: 0; width: 100%; border-radius: 10px;">
-                    </td>
-                </tr>
-            </table>
-            <table style="border-bottom: 2px solid #BDBDBD; margin-left: 35px; margin-right: 35px;">
-                <tbody>
-                    <tr>
-                        <td align="center">
-                            <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 30px 35px 0 35px; text-align: left; width: 67%; padding-bottom: 10px;">
-                                <tbody>
-                                    <tr>
-                                        <td colspan="2" align="center" style="width: 100%;">
-                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700;">
-                                                DMG Pro promises to effortlessly grow your business by providing:
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0px 35px 0 35px;">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div>
-                                                <img src="https://i.ibb.co/nBBp2Jv/content-management.png" alt="content-management" style="border: 0;">
-                                            </div>
-                                        </td>
-                                        <td style="padding-left: 18px;">
-                                            <table align="center">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Personalized Job Matching</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://i.ibb.co/GpKbpq3/ribbon.png" alt="ribbon" style="border: 0;">
-                                        </td>
-                                        <td style="padding-left: 18px;">
-                                            <table align="center">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Access to Premium Clients</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://i.ibb.co/1r0N1j2/dollar-increase.png" alt="dollar-increase" style="border: 0;">
-                                        </td>
-                                        <td style="padding-left: 18px;">
-                                            <table align="center">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Higher Technician Utilization</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="text-align: center;">
-                                        <td colspan="2" style="padding-top: 29px;">
-                                            <div>
-                                                <a href="https://dmgpro.com/?provider={{provider_id}}" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin: 0 auto;">Sign Up</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr style="text-align: center;">
-                                        <td colspan="2" style="padding-top: 15px; padding-bottom: 30px;">
-                                            <div>
-                                                <a href="https://dmgpro.com/providers" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500;">Learn More</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table role="presentation" cellspacing="0" cellpadding="0">
-                <tbody>
-                    <tr>
-                        <td colspan="2" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 13px;">
-                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 700; font-size: 20px;">
-                                Here are just a few of the new features
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table role="presentation" cellspacing="0" cellpadding="0" style="padding: 0;">
-                <tbody>
-                    <tr style="background: #EEEEEE;">
-                        <td style="width: 300px;">
-                            <table align="center">
-                                <tbody>
-                                    <tr>
-                                        <td style="padding-top: 3px; padding-bottom: 3px; ">
-                                            <img src="https://i.ibb.co/qxwD2Yp/male-worker-factory-1.jpg" alt="male-worker-factory2" style="border: 0; border-radius: 10px;">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td style="width: 300px;">
-                            <table style="width: 225px;" align="center">
-                                <tbody>
-                                    <tr>
-                                        <td style="font-size: 14px;">
-                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                                                Our brand-new job board is designed to offer you premium jobs tailored to your team’s skills. Accept work in one click, then assign it to specific technicians.
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 300px;">
-                            <table style="width: 214px;" align="center">
-                                <tbody>
-                                    <tr>
-                                        <td align="center" style="font-size: 14px; text-align: left;">
-                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                                                A new app designed specifically to help your technicians complete each job on the first trip.
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td>
-                            <table align="center" style="width: 300px;">
-                                <tbody>
-                                    <tr>
-                                        <td align="center" style="padding-top: 3px; padding-bottom: 3px;">
-                                            <img src="https://i.ibb.co/fXM22K1/smiling-mechanic-giving-thumbs-up-front-car-with-hood-open.jpg" alt="male-worker-factory2" style="border: 0; border-radius: 10px;">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr style="background: #EEEEEE;">
-                        <td style="width: 300px;">
-                            <table align="center">
-                                <tbody>
-                                    <tr>
-                                        <td style="padding-top: 3px; padding-bottom: 3px; ">
-                                            <img src="https://i.ibb.co/30hksNc/worker-removes-scale-from-metal-workpieces.jpg" alt="male-worker-factory2" style="border: 0; border-radius: 10px;">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td style="width: 300px;">
-                            <table style="width: 234px;" align="center">
-                                <tbody>
-                                    <tr>
-                                        <td style="font-size: 14px;">
-                                            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                                                Run your entire business from one centralized hub. Control Center is fully automated, enabling you to more effectively manage technician profiles, assignments, invoices and quality control.
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-top: 22px;"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <table align="center">
-                                <tbody>
-                                    <tr>
-                                        <td align="center">
-                                            <div>
-                                                <a href="https://dmgpro.com/?provider={{provider_id}}" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin: 0 auto;">Sign Up</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" style="padding-top: 10px; padding-bottom: 10px;">
-                                            <div>
-                                                <a href="https://dmgpro.com/providers" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Learn More</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr style="text-align: center;">
-                        <td colspan="2">
-                        </td>
-                    </tr>
-                    <tr style="text-align: center;">
-                    </tr>
-                </tbody>
-            </table>
-            <div style="width: 100%; border-bottom: solid; border-color: #eeeeee;">
-                <div style=" text-align: center; width: 50%;">
-                    <div style="width: 100%; margin: 24px 0; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                      <p style="font-size: 14px; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 400;">
-                        Please stay tuned for more information and feel free to email us at
-                      </p>
-                      <a href="mailto: Technician.Relations@divisionsinc.com" style="font-size: 14px; text-decoration: underline; border-bottom: #000000; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                        Technician.Relations@divisionsinc.com
-                        <p></p>
-                      </a>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin: 35px 0;">
-                <ul style="list-style: none; padding: 0;">
-                    <li style="display: inline; margin-right: 15px;">
-                        <a href="https://www.facebook.com/DivisionsMG" target="_blank" rel="noopener noreferrer" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
-                            <img src="https://i.ibb.co/rHjqZNF/facebook-logo.png" alt="facebook_logo" style="border: 0; height: 24px; width: 24px;" width="24" height="24">
-                        </a>
-                    </li>
-                    <li style="display: inline; margin-right: 15px;">
-                        <a href="https://www.instagram.com/divisionsmg/" target="_blank" rel="noopener noreferrer" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
-                            <img src="https://i.ibb.co/R6HdkY9/instagram-logo.png" alt="instagram_logo" style="border: 0; height: 24px; width: 24px;" width="24" height="24">
-                        </a>
-                    </li>
-                    <li style="display: inline; margin-right: 15px;">
-                        <a href="https://www.linkedin.com/company/divisions-maintenance-group" target="_blank" rel="noopener noreferrer" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
-                            <img src="https://i.ibb.co/LzrHm8v/linkedin-logo.png" alt="linkedin_logo" style="border: 0; height: 24px; width: 24px;" width="24" height="24">
-                        </a>
-                    </li>
-                    <li style="display: inline; margin-right: 15px;">
-                        <a href="https://twitter.com/DivisionsHQ" target="_blank" rel="noopener noreferrer" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
-                            <img src="https://i.ibb.co/XLVVn4k/twitter-logo.png" alt="twitter_logo" style="border: 0; height: 24px; width: 24px;" width="24" height="24">
-                        </a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="https://www.youtube.com/channel/UCQ35u2cC1OzhKESsosiN31A" target="_blank" rel="noopener noreferrer" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
-                            <img src="https://i.ibb.co/bJT1PL0/youtube-logo.png" alt="youtube_logo" style="border: 0; height: 24px; width: 24px;" width="24" height="24">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div style="border-top: 1px solid; border-color: #BDBDBD; background: #F5F5F5;">
-                <div style="margin-top: 25px; margin-bottom: 17px;">
-                    <span style="color: #45413C; font-size: 10px; font-style: italic; font-family: 'DM Sans';">
-                        Copyright © 2022 Divisions Maintenance Group, All rights resereved
-                    </span>
-                </div>
-                <div style="width: 116px; padding-bottom: 18px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                    <span style="color: #45413C; font-size: 10px; font-weight: 500; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                        Our mailing address is:<br>
-                        300 Dave Cowens Drive<br>
-                        Newport, KY 41071<br>
-                    </span>
-                </div>
-                <div>
-                    <div style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                        <span style="color: #45413c; font-size: 10px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                          Want to change how you receive these emails?
-                        </span>
-                      </div>
-                      <div style="padding-bottom: 32px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                        <span style="color: #45413c; font-size: 10px; font-family: 'DM Sans';">
-                          You can
-                          <a href="https://www.dmgpro.com" target="_blank" class="update" style="color: #45413c; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                            update your preferences
-                          </a> or
-                          <a href="https://www.dmgpro.com" target="_blank" class="update" style="color: #45413c; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
-                            unsubscribe
-                          </a>
-                          from this list
-                        </span>
-                      </div>
-                </div>
-            </div>
+  <center style="width: 100%;">
+    <div style="max-width: 600px; background-color: #FFFFFF;">
+      <div style="text-align: left;">
+        <div style="background-color: #003E96; padding:10px;">
+          <img style="border: 0; height: 52.63px; width: 93px; padding-left: 31px;"
+            src="https://i.ibb.co/W2ZJfgS/Union.png" alt="DMG-Pro" width="93" height="52.63">
         </div>
-    </center>
-</body></html>
+      </div>
+      <table role="presentation" cellspacing="0" cellpadding="0"
+        style="margin: 0 35px 0 35px; padding: 20px 0 30px 0; border-bottom: 2px solid #BDBDBD;">
+        <tr>
+          <td colspan="2">
+            <div style="width: 70%;">
+              <span
+                style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 500; font-size: 34px;">You’ve
+                been selected to join DMG Pro</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 40%; padding-right: 21px;">
+            <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+              You’ve been recognized as a top performer in DMG! We are excited to have you onboard onto our brand-new
+              platform built from the ground up with you, our provider, in mind.
+            </span>
+            <div style="padding-top: 20px;">
+              <a href="https://dmgpro.com/?provider={{provider_id}}"
+                style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin-right: 19px;">
+                Save Your Seat
+              </a>
+            </div>
+          </td>
+          <td style="width: 30%;">
+            <img
+              src="https://i.ibb.co/dWhWHzd/portrait-engineering-with-helmet-safety-unifrom-standing-factory-industrial-worker.jpg"
+              style="border: 0; width: 100%; border-radius: 10px;">
+          </td>
+        </tr>
+      </table>
+      <table style="border-bottom: 2px solid #BDBDBD; margin-left: 35px; margin-right: 35px;">
+        <tbody>
+          <tr>
+            <td align="center">
+              <table role="presentation" cellspacing="0" cellpadding="0"
+                style="margin: 30px 35px 0 35px; text-align: left; width: 67%; padding-bottom: 10px;">
+                <tbody>
+                  <tr>
+                    <td colspan="2" align="center" style="width: 100%;">
+                      <span
+                        style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700;">
+                        DMG Pro promises to effortlessly grow your business by providing:
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0px 35px 0 35px;">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>
+                        <img src="https://i.ibb.co/nBBp2Jv/content-management.png" alt="content-management"
+                          style="border: 0;">
+                      </div>
+                    </td>
+                    <td style="padding-left: 18px;">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Personalized Job
+                                Matching</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 20px;"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://i.ibb.co/GpKbpq3/ribbon.png" alt="ribbon" style="border: 0;">
+                    </td>
+                    <td style="padding-left: 18px;">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Access to Premium
+                                Clients</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 20px;"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://i.ibb.co/1r0N1j2/dollar-increase.png" alt="dollar-increase" style="border: 0;">
+                    </td>
+                    <td style="padding-left: 18px;">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">Higher Technician
+                                Utilization</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td colspan="2" style="padding-top: 29px; padding-bottom: 30px;">
+                      <div>
+                        <a href="https://dmgpro.com/?provider={{provider_id}}" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin: 0 auto;">
+                          Save Your Seat
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table role="presentation" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td colspan="2"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 13px;">
+              <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 700; font-size: 20px;">
+                Here are just a few of the new features
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table role="presentation" cellspacing="0" cellpadding="0" style="padding: 0;">
+        <tbody>
+          <tr style="background: #EEEEEE;">
+            <td style="width: 300px;">
+              <table align="center">
+                <tbody>
+                  <tr>
+                    <td style="padding-top: 3px; padding-bottom: 3px; ">
+                      <img src="https://i.ibb.co/qxwD2Yp/male-worker-factory-1.jpg" alt="male-worker-factory2"
+                        style="border: 0; border-radius: 10px;">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td style="width: 300px;">
+              <table style="width: 225px;" align="center">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 14px;">
+                      <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+                        Our brand-new job board is designed to offer you premium jobs tailored to your team’s skills.
+                        Accept work in one click, then assign it to specific technicians.
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 300px;">
+              <table style="width: 214px;" align="center">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-size: 14px; text-align: left;">
+                      <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+                        A new app designed specifically to help your technicians complete each job on the first trip.
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <table align="center" style="width: 300px;">
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding-top: 3px; padding-bottom: 3px;">
+                      <img src="https://i.ibb.co/fXM22K1/smiling-mechanic-giving-thumbs-up-front-car-with-hood-open.jpg"
+                        alt="male-worker-factory2" style="border: 0; border-radius: 10px;">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr style="background: #EEEEEE;">
+            <td style="width: 300px;">
+              <table align="center">
+                <tbody>
+                  <tr>
+                    <td style="padding-top: 3px; padding-bottom: 3px; ">
+                      <img src="https://i.ibb.co/30hksNc/worker-removes-scale-from-metal-workpieces.jpg"
+                        alt="male-worker-factory2" style="border: 0; border-radius: 10px;">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td style="width: 300px;">
+              <table style="width: 234px;" align="center">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 14px;">
+                      <span style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+                        Run your entire business from one centralized hub. Control Center is fully automated, enabling
+                        you to more effectively manage technician profiles, assignments, invoices and quality control.
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top: 22px;"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="padding-bottom: 46px;">
+              <table align="center">
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <div>
+                        <a href="https://dmgpro.com/?provider={{provider_id}}"
+                          style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 500; padding: 6px 16px; background-color: #0067F9; color: #FFFFFF; border-radius: 70px; text-decoration: none; margin: 0 auto;">Save
+                          Your Seat</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr style="text-align: center;">
+            <td colspan="2">
+            </td>
+          </tr>
+          <tr style="text-align: center;">
+          </tr>
+        </tbody>
+      </table>
+      <div style="width: 100%; border-bottom: solid; border-color: #eeeeee;">
+        <div style=" text-align: center; width: 50%;">
+          <div style="width: 100%; margin-bottom: 24px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+            <p style="font-size: 14px; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-weight: 400;">
+              Please stay tuned for more information and feel free to email us at
+            </p>
+            <a href="mailto: Technician.Relations@divisionsinc.com"
+              style="font-size: 14px; text-decoration: underline; border-bottom: #000000; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+              Technician.Relations@divisionsinc.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin: 35px 0;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="display: inline; margin-right: 15px;">
+            <a href="https://www.facebook.com/DivisionsMG" target="_blank" rel="noopener noreferrer"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
+              <img src="https://i.ibb.co/rHjqZNF/facebook-logo.png" alt="facebook_logo"
+                style="border: 0; height: 24px; width: 24px;" width="24" height="24">
+            </a>
+          </li>
+          <li style="display: inline; margin-right: 15px;">
+            <a href="https://www.instagram.com/divisionsmg/" target="_blank" rel="noopener noreferrer"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
+              <img src="https://i.ibb.co/R6HdkY9/instagram-logo.png" alt="instagram_logo"
+                style="border: 0; height: 24px; width: 24px;" width="24" height="24">
+            </a>
+          </li>
+          <li style="display: inline; margin-right: 15px;">
+            <a href="https://www.linkedin.com/company/divisions-maintenance-group" target="_blank"
+              rel="noopener noreferrer"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
+              <img src="https://i.ibb.co/LzrHm8v/linkedin-logo.png" alt="linkedin_logo"
+                style="border: 0; height: 24px; width: 24px;" width="24" height="24">
+            </a>
+          </li>
+          <li style="display: inline; margin-right: 15px;">
+            <a href="https://twitter.com/DivisionsHQ" target="_blank" rel="noopener noreferrer"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
+              <img src="https://i.ibb.co/XLVVn4k/twitter-logo.png" alt="twitter_logo"
+                style="border: 0; height: 24px; width: 24px;" width="24" height="24">
+            </a>
+          </li>
+          <li style="display: inline;">
+            <a href="https://www.youtube.com/channel/UCQ35u2cC1OzhKESsosiN31A" target="_blank" rel="noopener noreferrer"
+              style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; text-decoration: none;">
+              <img src="https://i.ibb.co/bJT1PL0/youtube-logo.png" alt="youtube_logo"
+                style="border: 0; height: 24px; width: 24px;" width="24" height="24">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div style="border-top: 1px solid; border-color: #BDBDBD; background: #F5F5F5;">
+        <div style="margin-top: 25px; margin-bottom: 17px;">
+          <span style="color: #45413C; font-size: 10px; font-style: italic; font-family: 'DM Sans';">
+            Copyright © 2022 Divisions Maintenance Group, All rights resereved
+          </span>
+        </div>
+        <div style="width: 116px; padding-bottom: 18px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+          <span
+            style="color: #45413C; font-size: 10px; font-weight: 500; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+            Our mailing address is:<br>
+            300 Dave Cowens Drive<br>
+            Newport, KY 41071<br>
+          </span>
+        </div>
+        <div>
+          <div style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+            <span style="color: #45413c; font-size: 10px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+              Want to change how you receive these emails?
+            </span>
+          </div>
+          <div style="padding-bottom: 32px; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+            <span style="color: #45413c; font-size: 10px; font-family: 'DM Sans';">
+              You can
+              <a href="https://www.dmgpro.com" target="_blank" class="update"
+                style="color: #45413c; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+                update your preferences
+              </a> or
+              <a href="https://www.dmgpro.com" target="_blank" class="update"
+                style="color: #45413c; font-family: 'DM Sans', Arial, Helvetica, sans-serif;">
+                unsubscribe
+              </a>
+              from this list
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>
