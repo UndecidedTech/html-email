@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!--Main Stylesheet-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      ul {
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 580px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      body {
+        background: #fff;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .amazon-pc {
+        display: inline-block;
+      }
+
+      .amazon-mobile {
+        display: none;
+      }
+
+      @media all and (max-width: 480px) {
+        .amazon-pc {
+          display: none;
+        }
+
+        .amazon-mobile {
+          display: inline-block;
+        }
+
+        .custom-padding {
+          padding: 0px 2%;
+        }
+
+        .headingText {
+          font-weight: 500;
+          font-size: 24px !important;
+          line-height: 133.4%;
+        }
+        .sign-up-button {
+          text-align: center;
+        }
+      }
+
+      @media all and (max-width: 370px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--=================Start Header Section==============-->
+    <div
+      class="header-area"
+      style="
+        background: radial-gradient(
+            94.01% 155.66% at 7.01% 72.34%,
+            rgba(0, 62, 150, 0.7) 0%,
+            rgba(0, 108, 249, 0.7) 100%
+          ),
+          #003e96;
+        padding: 12px 0px;
+      "
+    >
+      <div class="container custom-padding" style="padding-left: 30px">
+        <img src="https://i.ibb.co/rmM0Csk/logo.png" alt="logo" />
+      </div>
+    </div>
+    <!--=================End Header Section==============-->
+    <!--=================Start GiftCard Section==============-->
+    <div class="gift-card-area">
+      <div
+        class="hero-area custom-padding"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 30px;
+        "
+      >
+        <!--Gift Card Text-->
+        <div class="gift-card-text">
+          <!--Gift Card Heading-->
+          <div
+            class="gift-card-heading"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h1
+              class="headingText"
+              style="
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 120%;
+                color: #000000;
+                padding-top: 20px;
+              "
+            >
+              Want a $25 giftcard?
+            </h1>
+            <img
+              class="amazon-mobile"
+              src="https://i.ibb.co/rZnQ91q/amazon-mobile.pngg"
+              alt=""
+              style="margin-top: 10px"
+            />
+          </div>
+          <!--/// End Gift Card Heading-->
+          <div class="gift-card-details" style="padding: 10px 0px 15px">
+            <p
+              style="
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                color: #000000;
+                letter-spacing: 0.15px;
+              "
+            >
+              Make sure your account is ready to get jobs.
+            </p>
+            <ul style="padding-left: 25px">
+              <li
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 150%;
+                  color: #000000;
+                  letter-spacing: 0.15px;
+                "
+              >
+                Add a dispatch address
+              </li>
+              <li
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 150%;
+                  color: #000000;
+                  letter-spacing: 0.15px;
+                "
+              >
+                Add a service line and service type
+              </li>
+              <li
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 150%;
+                  color: #000000;
+                  letter-spacing: 0.15px;
+                "
+              >
+                Invite 3 technicians
+              </li>
+            </ul>
+            <p
+              style="
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                color: #000000;
+                letter-spacing: 0.15px;
+              "
+            >
+              We want to make sure you get the full DMG Pro experience. If you
+              complete the above actions by July 27th we will send you a $25
+              Amazon gift card.
+            </p>
+          </div>
+          <!--Sign UP Button-->
+          <div class="sign-up-button custom-padding">
+            <a
+              class="sign-up"
+              href="{{provider_url}}"
+              style="
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+                background: #0067f9;
+                box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                  0px 2px 2px rgba(0, 0, 0, 0.14),
+                  0px 1px 5px rgba(0, 0, 0, 0.12);
+                border-radius: 70px;
+                padding: 6px 16px;
+                display: inline-block;
+              "
+              >Sign Up</a
+            >
+          </div>
+          <!--/// End Sign UP Button-->
+        </div>
+        <!--/// End Gift Card Text-->
+        <!--Gift Card Image-->
+        <div class="gift-card-img">
+          <img
+            class="amazon-pc"
+            src="https://i.ibb.co/vsFSSzr/amazon-pc.png"
+            alt=""
+          />
+        </div>
+        <!--/// End Gift Card Image-->
+      </div>
+    </div>
+    <!--=================End GiftCard Section==============-->
+    <!--=================Start Social Media Section==============-->
+    <div
+      class="social-media-area"
+      style="
+        border-top: 2px solid #eeeeee;
+        border-bottom: 2px solid #eeeeee;
+        padding: 35px 0px;
+        margin: 25px 0px;
+      "
+    >
+      <div class="container">
+        <div class="social-media">
+          <ul
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              list-style: none;
+            "
+          >
+            <li style="padding: 0px 7.5px">
+              <a
+                class="social-media-item"
+                href="https://www.facebook.com/DivisionsMG"
+                ><img src="https://i.ibb.co/DrWMWPV/facebook.png" alt="icon"
+              /></a>
+            </li>
+            <li style="padding: 0px 7.5px">
+              <a
+                class="social-media-item"
+                href="https://www.instagram.com/divisionsmg/"
+                ><img src="https://i.ibb.co/BjmSjPQ/instgram.png" alt="icon"
+              /></a>
+            </li>
+            <li style="padding: 0px 7.5px">
+              <a
+                class="social-media-item"
+                href="https://www.linkedin.com/company/divisions-maintenance-group"
+                ><img src="https://i.ibb.co/pL51JJz/linkden.png" alt="icon"
+              /></a>
+            </li>
+            <li style="padding: 0px 7.5px">
+              <a
+                class="social-media-item"
+                href="https://twitter.com/DivisionsHQ"
+                ><img src="https://i.ibb.co/QptJQnx/twitter.png" alt="icon"
+              /></a>
+            </li>
+            <li style="padding: 0px 7.5px">
+              <a
+                class="social-media-item"
+                href="https://www.youtube.com/channel/UCQ35u2cC1OzhKESsosiN31A"
+                ><img src="https://i.ibb.co/GRjSZzQ/youtube.png" alt="icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--=================End Social Media Section==============-->
+    <!--=================End Footer Section==============-->
+    <div class="main-footer-area custom-padding">
+      <div class="container">
+        <div class="footer-item">
+          <!--Copy right-->
+          <div class="copyright-area">
+            <p
+              style="
+                font-style: italic;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 143%;
+                letter-spacing: 0.15px;
+                color: #45413c;
+                text-align: center;
+              "
+            >
+              Copyright © 2022 Divisions Maintenance Group, All rights resereved
+            </p>
+          </div>
+          <!--Copy right-->
+          <!--Address-->
+          <div class="address" style="margin: 17px 0px">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 143%;
+                text-align: center;
+                letter-spacing: 0.15px;
+                color: #45413c;
+              "
+            >
+              Mailing Address: <br />
+              300 Dave Cowens Drive <br />Newport, KY 41071
+            </p>
+          </div>
+          <!--/// End Address-->
+          <!--Other Footer Text-->
+          <div class="footer-text" style="margin-bottom: 32px">
+            <p
+              style="
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 143%;
+                text-align: center;
+                letter-spacing: 0.15px;
+                color: #45413c;
+              "
+            >
+              Want to change how you receive these emails?
+            </p>
+            <br />
+            <p
+              style="
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 143%;
+                text-align: center;
+                letter-spacing: 0.15px;
+                color: #45413c;
+              "
+            >
+              You can
+              <a href="#" style="text-decoration: underline; color: #45413c"
+                >update your preferences</a
+              >
+              or
+              <a href="#" style="text-decoration: underline; color: #45413c"
+                >unsubscribe from this list</a
+              >
+            </p>
+          </div>
+          <!--/// End Other Footer Text-->
+        </div>
+      </div>
+    </div>
+    <!--=================End Footer Section==============-->
+  </body>
+</html>
