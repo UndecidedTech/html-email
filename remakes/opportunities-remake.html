@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWB3wTyCg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWCXwT.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWB3wTyCg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWCXwT.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamC2QX.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBimCw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        .update:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #FFFFFF; font-family: 'DM Sans' , Arial, Helvetica,
+    sans-serif;">
+    <center style="width: 100%;">
+        <div style="max-width: 600px; background-color: #FFFFFF;">
+            <div style="text-align: left;">
+                <div style="background-color: #003E96; padding:10px;"> <img style="border: 0; height: 52.63px; width:
+                        93px; padding-left: 31px;" src="https://i.ibb.co/W2ZJfgS/Union.png" alt="DMG-Pro"
+                        width="93" height="52.63"> </div>
+            </div> <img width="140px" height="140ox" style=" margin-top: 1.5rem;background-repeat:
+                no-repeat;background-position: center center;background-size: cover;"
+                src="{{customer_support_logo_photoId}}" alt="customer support" />
+            <div style="margin-top: 1.5rem;font-weight: 500;font-size: 2.125rem;font-style: normal;line-height:
+                144%;letter-spacing: 0.15px;color: #1F1F1F;"> {{job_name}} </div> <img width="177px" height="50px"
+                style="background-repeat: no-repeat;background-position: center center;background-size:
+                cover;margin-top:19px" src="{{customer_logo_photoId}}" alt="Customer logo" />
+            <div style="margin-top: 1.5rem;font-weight: 700;font-size: 1rem;font-style: normal;line-height:
+                150%;letter-spacing: 0.15px;color: #000; overflow-wrap: break-word; margin-left: 1rem; margin-right:
+                1rem;"> {{property_name}} {{property_address_line1}}, {{property_address_city}}</div>
+            <div style="margin-top: 1.5rem;box-sizing: border-box;align-items: flex-start;padding: 1.5rem 0;gap:
+                16px;max-width: 524px;background: #FFFFFF;border: 1px solid #D7DADB;border-radius: 1.5rem;">
+                <div style="display: flex;flex-direction: column;align-items: flex-start;margin-left: 2rem; height:
+                    3.125rem;">
+                    <div style="font-weight: 500;font-size: 1rem;font-style: normal;line-height: 175%;letter-spacing:
+                        0.15px;color: #1F1F1F; overflow-wrap: break-word;"> Following are the details </div>
+                </div>
+                <div style="align-items: center;gap: 20px;flex-direction: row;justify-content: space-between;
+                    margin-left: 2rem;"> </div>
+                <div style=" height: 0px;border: 1px solid #D7DADB;align-self: stretch;"></div>
+                <table role="presentation" cellspacing="0" cellpadding="0" style="max-width: 80%">
+                    <tbody>
+                        <tr>
+                            <td colspan=" 2" style="padding-top: 24px;width: 13.031rem;height: 2.625rem;"> <label
+                                    style="font-style: normal;font-weight: 400;font-size: 0.75rem;line-height:
+                                    166%;letter-spacing: 0.4px;color: #646566;"> Job Title</label>
+                                <div style="font-style: normal;font-weight: 500;font-size: 14px;line-height:
+                                    157%;letter-spacing: 0.1px;color: #1F1F1F;"> {{job_title}} </div>
+                            </td>
+                            <td colspan="2" style="padding-top: 24px;height: 2.625rem;"> <label style="font-style:
+                                    normal;font-weight: 400;font-size: 0.75rem;line-height: 166%;letter-spacing:
+                                    0.4px;color: #646566;"> Urgency</label>
+                                <div style="font-style: normal;font-weight: 500;font-size: 14px;line-height:
+                                    157%;letter-spacing: 0.1px;color: #1F1F1F;"> {{job_urgency}} </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=" 2" style="padding-top: 24px;width: 26.031rem;height: 2.625rem;"> <label
+                                    style="font-style: normal;font-weight: 400;font-size: 0.75rem;line-height:
+                                    166%;letter-spacing: 0.4px;color: #646566;"> Job Scope</label>
+                                <div style="font-style: normal;font-weight: 500;font-size: 14px;word-break:
+                                    break-all;line-height: 157%;letter-spacing: 0.1px;color: #1F1F1F;"> {{job_scope}}
+                                </div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div style=" width: 75%;font-weight: 400;font-size: 0.75rem;font-style: normal;line-height:
+                    150%;letter-spacing: 0.4px;color: #45413C; overflow-wrap: break-word; margin: 1rem auto;"> Please
+                    check scope, special instruction, rate, photos and other details in Control Center </div> <a
+                    style="padding: 6px 16px;background: #0067F9;box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px
+                    2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);border-radius: 4.375rem; font-weight:
+                    500;font-size: 1rem; line-height: 1.5rem;color:#FAFAFA; text-decoration: none;"
+                    href="{{view_job_url}}" target="_blank"> View Job</a>
+            </div>
+            <div style=" margin-top: 24px;">
+                <div style="font-weight: 400;font-size: 0.75rem;font-style: normal;line-height: 150%;letter-spacing:
+                    0.4px;color: #45413C; overflow-wrap: break-word; margin-bottom: 1rem;"> For any clarification, you
+                    can write to us at: </div> <a style="font-weight: 400;font-size: 0.75rem; color:#0067F9"
+                    href="mailto:{{support_email}}" target="_blank"> {{support_email}}</a>
+            </div>
+            <div style="margin-top: 28px;">
+                <div style="border-top: 1px solid; border-color: #BDBDBD; background: #F5F5F5;">
+                    <div style="margin-top: 25px; margin-bottom: 17px;"> <span style="color: #45413C; font-size:
+                            10px; font-style: italic; font-family: 'DM Sans' ;"> Copyright © 2022 Divisions Maintenance
+                            Group, All rights resereved </span> </div>
+                    <div style="width: 116px; padding-bottom: 18px; font-family: 'DM Sans' , Arial, Helvetica,
+                        sans-serif;"> <span style="color: #45413C; font-size: 10px; font-weight: 500;
+                            font-family: 'DM Sans' , Arial, Helvetica, sans-serif;"> Our mailing address is:<br> 300
+                            Dave Cowens Drive<br> Newport, KY 41071<br> </span> </div>
+                    <div>
+                        <div style="font-family: 'DM Sans' , Arial, Helvetica, sans-serif;"> <span style="color:
+                                #45413c; font-size: 10px; font-family: 'DM Sans' , Arial, Helvetica, sans-serif;"> Want
+                                to change how you receive these emails? </span> </div>
+                        <div style="padding-bottom: 32px; font-family: 'DM Sans' , Arial, Helvetica, sans-serif;">
+                            <span style="color: #45413c; font-size: 10px; font-family: 'DM Sans' ;"> You can <a
+                                    href="https://www.dmgpro.com" target="_blank" class="update" style="color:
+                                    #45413c; font-family: 'DM Sans' , Arial, Helvetica, sans-serif;"> update your
+                                    preferences </a> or <a href="https://www.dmgpro.com" target="_blank"
+                                    class="update" style="color: #45413c; font-family: 'DM Sans' , Arial, Helvetica,
+                                    sans-serif;"> unsubscribe </a> from this list </span> </div>
+                    </div>
+                </div>
+            </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Main Stylesheet-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 600px;
+        background-color: #FFF;
+        text-align: start;
+      }
+
+      ul {
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .link {
+        color: #0067F9;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        text-decoration-line: underline;
+      }
+
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 580px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      body {
+        background: #fff;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .snowtruck-pc {
+        display: inline-block!important;
+        width: 215.86px;
+        height: 174.38px;
+        margin-bottom: auto;
+      }
+
+      .snowtruck-mobile {
+        display: none; 
+      }
+
+      .social-media {
+        text-align: center;
+      }
+
+      .gift-card-details {
+        margin-bottom: 22px;
+      }
+
+      .promise-img {
+        width: 57px;
+        height: 57px;
+      }
+
+      .main-footer-area {
+        background-color: #F5F5F5;
+      }
+      .footer-container {
+        padding-top: 30px;        
+      }
+      .mobile-features {
+        display: none;
+      }
+      
+      .desktop-features {
+        display: block!important;
+      }
+      
+      .desktop-heading {
+        display: block!important;
+        margin-top: 43px;
+        margin-bottom: 21px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123.5%; /* 41.99px */
+        letter-spacing: 0.25px;
+        margin-left: 35px;
+      }
+
+      .hero-area {
+        margin: 0 35px;
+      }
+
+      .helpline {
+        padding: 31px 35px 0px 35px;
+      }
+
+      .headingText {
+        display: none;
+      }
+
+      .features-wrapper {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .features-header {
+        text-align: center;
+        width: 100%;
+      }
+
+      .sign-up-second {
+        text-align: center;
+        margin-bottom: 84px;
+      }
+
+      .sign-up-third {
+        text-align: center;
+        margin-bottom: 84px;
+      }
+
+      .feat-icon {
+        width: 57px;
+        height: 57px;
+      }
+
+      .promise-table {
+        margin: 16px auto 21px auto;
+        width: 68%;
+      }
+
+      .promise-header {
+        margin: 20px auto 0 auto;
+        max-width: 335px;
+      }
+
+      .learn-more {
+        margin-bottom: 44px;
+      }
+
+      .sign-up-button {
+        text-align: left;
+      }
+
+      .middle-promise {
+        padding-left: 10px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        [class="hide"] {
+          display:none!important;
+          visibility:hidden!important;
+          max-height:0px!important;
+          overflow:hidden!important;
+          font-size:0px!important;
+          max-width:0px!important;
+        }
+
+        .snowtruck-pc {
+          display: none;
+        }
+
+        .middle-promise {
+          padding: 20px 0;
+        }
+
+        .snowtruck-mobile {
+          display: inline-block!important;
+          width: 200px;
+          height: 161.57px;
+          border-radius: 17px;
+        }
+
+        .custom-padding {
+          padding: 0px 2%;
+        }
+
+        .headingText {
+          display: block!important;
+          font-weight: 500;
+          font-size: 24px !important;
+          line-height: 133.4%;
+          margin-bottom: 32px;
+          margin-top: 48px;
+        }
+        .sign-up-button {
+          text-align: center;
+          margin-bottom: 21px;
+          margin-bottom: 21px;
+        }
+
+        .sign-up-second {
+          text-align: center;
+          margin-bottom: 78px;
+        }
+
+        .sign-up-third {
+          text-align: center;
+          margin-bottom: 61px;
+        }
+
+        .gift-card-details {
+          margin-bottom: 32px;
+        }
+
+        .promise-img {
+          width: 44px;
+          height: 44px;
+        }
+        .mobile-features {
+          display: block!important;
+        }
+        .desktop-features {
+          display: none;
+        }
+        .desktop-heading {
+          display: none;
+        }
+        .hero-area {
+          padding-left: 20px;
+          margin: 0 auto;
+        }
+        .helpline {
+          padding: 0 20px;
+        }
+        .features-header {
+          max-width: 270px;
+          margin: auto;
+        }
+        .features-wrapper {
+          margin: 0 auto;
+        }
+        .feat-icon {
+          width: 45px; height: 45px;
+        }
+        .promise-table {
+          margin: 16px auto 21px auto;
+          width: 86%;
+        }
+        .learn-more {
+          margin-bottom: 22px;
+        }
+      }
+
+      @media all and (max-width: 370px) {
+      }
+</style>
+  </head>
+  <body style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; background: #fff; max-width: 600px; width: 100%; margin: 0 auto; font-family: 'DM Sans', sans-serif;">
+    <style>
+    </style>
+    <center style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+      <!--=================Start Header Section==============-->
+      <div class="wrapper" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 100%; max-width: 600px; background-color: #F9F9F9; text-align: start;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: auto;">
+          <!-- Email Header : BEGIN -->
+          <!-- <tr>
+            <td style="padding: 20px 0; text-align: center"></td>
+          </tr> -->
+          <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+            <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; background-color: #ffffff;" class="darkmode-bg" bgcolor="#ffffff">
+              <img src="https://mcusercontent.com/f02c9d6db43ae46218645f073/images/c5c295c1-ec46-8a96-e82e-179df7074143.png" width="600" height="78" alt="alt_text" border="0" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img">
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]> </td> <td valign="top" width="190"> <![endif]-->
+        <!--=================End Header Section==============-->
+        <!--=================Start GiftCard Section==============-->
+        <div style="text-align: left;">
+          <h1 class="desktop-heading show-mobile">
+            Don't Get Left Behind! SHOW DESKTOP
+          </h1>
+        </div>
+        <div class="gift-card-area">
+          <div
+            class="hero-area custom-padding"
+            style="
+              max-width: 600px;
+              align-items: center;
+            "
+          >
+            <!--Gift Card Text-->
+            <div class="gift-card-text">
+              <!--Gift Card Heading-->
+              <div
+                class="gift-card-heading"
+                style="text-align: left;"
+              >
+                <h1
+                  class="headingText mobile"
+                  style="
+                    font-size: 34px;
+                    font-weight: 500;
+                    line-height: 120%;
+                    color: #000000;
+                  "
+                >
+                  Don't Get Left Behind! SHOW MOBILE
+                </h1>
+              </div>
+              <!--/// End Gift Card Heading-->
+              <div class="gift-card-details">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="text-align: left;">
+                        <p
+                          style="
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 150%;
+                            color: #000000;
+                            letter-spacing: 0.15px;
+                            white-space: pre-line;
+                            line-height: 150%;
+                          "
+                        >Hi {{member_name}},<br><br> All snow operations are moving to DMG Pro. Login now to setup your account.
+                        </p>
+                      </td>
+                      <td style="width: 5%;"></td>
+                      <td>
+                        <div class="gift-card-img">
+                          <img
+                            class="snowtruck-pc"
+                            src="https://i.ibb.co/w7ySpyz/snowtruck.png"
+                            alt="warning"
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <!--Sign UP Button-->
+              <div class="sign-up-button custom-padding">
+                <a
+                  class="sign-up"
+                  href="{{link}}"
+                  style="
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #fff;
+                    background: #0067f9;
+                    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                      0px 2px 2px rgba(0, 0, 0, 0.14),
+                      0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 70px;
+                    padding: 6px 16px;
+                    display: inline-block;
+                  "
+                  >Login to DMG Pro</a
+                >
+              </div>
+              <!--/// End Sign UP Button-->
+            </div>
+            <!--/// End Gift Card Text-->
+
+
+            <!--Gift Card Image-->
+            <!--/// End Gift Card Image-->
+          </div>
+            <div class="helpline" style="text-align: left;">
+              <span style="
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 24px */
+              letter-spacing: 0.15px;">
+                If you have any questions contact us at: <br><b><a href="tel:+18774489730" class="link">(877) 448-9730</a></b> or <b><a href="mailto:ProviderSupport@divivionsinc.com" class="link">ProviderSupport@divisionsinc.com</a></b>
+              </span>
+            </div>
+        </div>
+        <div
+        style="
+          margin: 27px auto;
+          text-align: center;
+          width: 100%;
+          display: none;
+        ">
+          <img
+            class="snowtruck-mobile"
+            src="https://i.ibb.co/w7ySpyz/snowtruck.png"
+            alt="warning"
+          />
+        </div>
+        <!--=================End GiftCard Section==============-->
+
+        <!--===Divider===-->
+        <div style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 20px; height: 2px; background: #BDBDBD;"></div>
+
+        <!--===Promises Section===-->
+        <div class="features-wrapper" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+          <div class="promise-header" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+            <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.15px;">
+              DMG Pro promises to effortlessly grow your business by providing:
+            </span>
+          </div>
+          <table class="promise-table" role="presentation" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 16px auto 21px auto;">
+            <tbody style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-bottom: 17px;">
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 10%;" width="10%">
+                    <img class="promise-img" src="https://i.ibb.co/rmBjGRK/checkleaf.png" alt="project-management" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 57px; height: 57px; border: 0;" width="57" height="57">
+                </td>
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <div style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: left; width: 90%; padding-left: 15px;">
+                    <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; text-align: center; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 12px; font-style: normal; font-weight: 400; line-height: 166%; letter-spacing: 0.4px;">
+                      Easy Snow Agreement Management
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; height: 17px;" height="17"></td>
+              </tr>
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin-bottom: 17px;">
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <img src="https://i.ibb.co/HGQbyfq/money-bag.png" alt="ribbon" class="feat-icon" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 57px; height: 57px; border: 0;" width="57" height="57">
+                </td>
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <div style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: left; width: 90%; padding-left: 15px;">
+                    <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; text-align: center; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 12px; font-style: normal; font-weight: 400; line-height: 166%; letter-spacing: 0.4px;">
+                      Quick and easy payment experience
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; height: 17px;" height="17"></td>
+              </tr>
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <img src="https://i.ibb.co/vqhVPC6/truck.png" class="feat-icon" alt="ribbon" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 57px; height: 57px; border: 0;" width="57" height="57">
+                </td>
+                <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <div style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: left; width: 90%; padding-left: 15px;">
+                    <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; text-align: center; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 12px; font-style: normal; font-weight: 400; line-height: 166%; letter-spacing: 0.4px;">
+                      Snow jobs that match your business's capabilities
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="sign-up-second custom-padding" style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: center;">
+            <a class="sign-up" href="{{link}}" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-decoration: none; font-size: 16px; font-weight: 500; line-height: 24px; color: #fff; background: #0067f9; box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                  0px 2px 2px rgba(0, 0, 0, 0.14),
+                  0px 1px 5px rgba(0, 0, 0, 0.12); border-radius: 70px; padding: 6px 16px;">Login to DMG Pro</a>
+          </div>
+
+          <div style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: center;">
+          </div>
+
+        </div>
+        <!--===Divider===-->
+        <div style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 20px; height: 2px; background: #BDBDBD;"></div>
+
+        <!--================Start Feature Section ===================-->        
+        <div style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-top: 44px;">
+          <div class="features-header" style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: center;">
+            <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; font-family: 'DM Sans', sans-serif; font-size: 20px; font-style: normal; font-weight: 700; line-height: 160%; letter-spacing: 0.15px;">
+              Here are a few of our new features made just for you
+            </span>
+          </div>
+
+          <div class="desktop-features" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 100%; padding-top: 20px; display: none;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; max-width: 600px;">
+                <!-- Grouping 1 -->
+                <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <td bgcolor="#EEE" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <td width="40%" align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                          <img src="https://i.ibb.co/5v5RQvt/male-worker-sq.png" alt="Worker" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto; width: 100%; height: 100%;">
+                        </td>
+                        <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 10%;" width="10%"></td>
+                        <td width="50%" align="left" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-right: 10px;">
+                          <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                            Our brand-new agreements features makes it easy for you to manage and accept snow agreements quickly so you can get to the job ASAP.
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Grouping 2 -->
+                <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <td bgcolor="#FFF" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <td width="50%" class="middle-promise" align="left" style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                          <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                            Our invoicing feature allows you to enter snow-specific materials and rates so you can complete invoices easily with no hang ups.
+                          </span>
+                        </td>
+                        <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 10%;" width="10%"></td>
+                        <td width="40%" align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                          <img src="https://i.ibb.co/0tW86t9/safety-jacket-worker-sq.png" alt="Safety Worker" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto; width: 100%; height: 100%;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Grouping 3 -->
+                <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  <td bgcolor="#EEE" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <td width="40%" align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                          <img src="https://i.ibb.co/rwZnppv/plow-group-sq.png" alt="Plow Group" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto; width: 100%; height: 100%;">
+                        </td>
+                        <td style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 10%;" width="10%"></td>
+                        <td width="50%" align="left" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-right: 10px;">
+                          <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                            Our help team is available around the clock to answer your questions about DMG Pro.
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+          </div>
+
+          <div class="mobile-features" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; width: 100%; padding-top: 20px;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; max-width: 600px;">
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td bgcolor="#EEE" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding: 20px 20px 15px 20px;">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <img src="https://i.ibb.co/mcd6nrB/male-worker.png" alt="Worker" width="200" height="155" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto;">
+                      </td>
+                    </tr>
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="center" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding: 20px 0;">
+                        <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                          Our brand-new agreements features makes it easy for you to manage and accept snow agreements quickly so you can get to the job ASAP.
+                        </span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- New Grouping 1 -->
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td bgcolor="#FFF" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding: 20px 20px 15px 20px;">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <img src="https://i.ibb.co/8YzXQK4/safety-jacket-worker.png" alt="Safety Worker" width="200" height="155" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto;">
+                      </td>
+                    </tr>
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="left" style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <span style="padding-left:10px; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                          Our invoicing feature allows you to enter snow-specific materials and rates so you can complete invoices easily with no hang ups.
+                        </span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- New Grouping 2 -->
+              <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <td bgcolor="#EEE" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding: 20px 20px 15px 20px;">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="center" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                        <img src="https://i.ibb.co/3rqm87R/plow-group.png" alt="Plow Group" width="200" height="155" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0 auto;">
+                      </td>
+                    </tr>
+                    <tr style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                      <td align="left" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding: 20px 0;">
+                        <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+                          Our help team is available around the clock to answer your questions about DMG Pro.
+                        </span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="sign-up-third custom-padding" style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: center; padding-top: 24px;">
+            <a class="sign-up" href="{{link}}" style="margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-decoration: none; font-size: 16px; font-weight: 500; line-height: 24px; color: #fff; background: #0067f9; box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                  0px 2px 2px rgba(0, 0, 0, 0.14),
+                  0px 1px 5px rgba(0, 0, 0, 0.12); border-radius: 70px; padding: 6px 16px;">Login to DMG Pro</a>
+          </div>
+
+          <div style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-align: center; width: 80%; margin: 0 auto;">
+            <span style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; color: #000; text-align: center; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: 0.4px;">
+              Please stay tuned for more information and feel free to email us at: <br style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;"><br style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+              <a href="mailto:ProviderSupport@divivionsinc.com" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-decoration: none; color: #0067F9; font-feature-settings: 'clig' off, 'liga' off; font-family: 'DM Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: 0.4px; text-decoration-line: underline;">
+                  ProviderSupport@divisionsinc.com
+              </a>
+            </span>
+
+          </div>
+
+        <!--=================Start Social Media Section==============-->
+        <div
+          class="social-media-area"
+          style="
+            border-top: 2px solid #eeeeee;
+            border-bottom: 2px solid #eeeeee;
+            padding: 35px 0px;
+            margin: 25px 0px 0px 0px;
+          "
+        >
+          <div class="container">
+            <div class="social-media">
+              <ul
+                style="
+                  margin:  0 auto;
+                  list-style: none;
+                "
+              >
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.facebook.com/DivisionsMG"
+                    ><img src="https://i.ibb.co/DrWMWPV/facebook.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.instagram.com/divisionsmg/"
+                    ><img src="https://i.ibb.co/BjmSjPQ/instgram.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.linkedin.com/company/divisions-maintenance-group"
+                    ><img src="https://i.ibb.co/pL51JJz/linkden.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://twitter.com/DivisionsHQ"
+                    ><img src="https://i.ibb.co/QptJQnx/twitter.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.youtube.com/channel/UCQ35u2cC1OzhKESsosiN31A"
+                    ><img src="https://i.ibb.co/GRjSZzQ/youtube.png" alt="icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--=================End Social Media Section==============-->
+        <!--=================End Footer Section==============-->
+        <div class="main-footer-area custom-padding" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; background-color: #F5F5F5;">
+          <div class="footer-container" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-top: 30px;">
+            <div class="footer-item" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+              <!--Copy right-->
+              <div class="copyright-area" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <p style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0; padding: 0; font-style: italic; font-weight: 400; font-size: 10px; line-height: 143%; letter-spacing: 0.15px; color: #45413c; text-align: center;">
+                  Copyright © 2022 Divisions Maintenance Group, All rights resereved
+                </p>
+              </div>
+              <!--Copy right-->
+              <!--Address-->
+              <div class="address" style="padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 17px 0px;">
+                <p style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0; padding: 0; font-weight: 500; font-size: 10px; line-height: 143%; text-align: center; letter-spacing: 0.15px; color: #45413c;">
+                  Mailing Address: <br style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                  300 Dave Cowens Drive <br style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">Newport, KY 41071
+                </p>
+              </div>
+              <!--/// End Address-->
+              <!--Other Footer Text-->
+              <div class="footer-text" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; padding-bottom: 32px;">
+                <p style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0; padding: 0; font-weight: 400; font-size: 10px; line-height: 143%; text-align: center; letter-spacing: 0.15px; color: #45413c;">
+                  Want to change how you receive these emails?
+                </p>
+                <br style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none;">
+                <p style="-webkit-box-sizing: border-box; box-sizing: border-box; outline: none; margin: 0; padding: 0; font-weight: 400; font-size: 10px; line-height: 143%; text-align: center; letter-spacing: 0.15px; color: #45413c;">
+                  You can
+                  <a href="#" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-decoration: underline; color: #45413c;">update your preferences</a>
+                  or
+                  <a href="#" style="margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; text-decoration: underline; color: #45413c;">unsubscribe from this list</a>
+                </p>
+              </div>
+              <!--/// End Other Footer Text-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=================End Footer Section==============-->
+    </div></center>
+  </body>
+</html>

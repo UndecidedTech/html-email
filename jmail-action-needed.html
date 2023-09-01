@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!--Main Stylesheet-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 600px;
+        background-color: #F9F9F9;
+        text-align: start;
+      }
+
+      ul {
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 580px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      body {
+        background: #fff;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .amazon-pc {
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: auto;
+      }
+
+      .amazon-mobile {
+        display: none;
+      }
+
+      .social-media {
+        text-align: center;
+      }
+
+      .gift-card-details {
+        margin-bottom: 37px;
+        /* margin: 0 40px 37px 0; */
+      }
+
+      .headingText {
+        padding-top: 20px;
+      }
+
+      .sign-up-button {
+        width: full;
+        text-align: center;
+      }
+
+      .gift-card-img {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+      }
+
+      .hero-area {
+        padding-left: 30px;
+      }
+
+      @media all and (max-width: 480px) {
+        .gift-card-img {
+          display: none;
+        }
+
+        .amazon-pc {
+          display: none;
+        }
+
+        .amazon-mobile {
+          display: inline-block;
+        }
+
+        .custom-padding {
+          padding: 0px 4%;
+        }
+
+        .headingText {
+          font-weight: 500;
+          font-size: 34px !important;
+          line-height: 133.4%;
+          /* margin: auto; */
+          margin-right: auto;
+        }
+        .sign-up-button {
+          text-align: center;
+        }
+
+        .gift-card-details {
+          margin-bottom: 78px;
+        }
+
+      }
+
+      @media all and (max-width: 370px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <!--=================Start Header Section==============-->
+      <div class="wrapper">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto">
+          <!-- Email Header : BEGIN -->
+          <!-- <tr>
+              <td style="padding: 20px 0; text-align: center"></td>
+            </tr> -->
+          <tr>
+            <td style="background-color: #ffffff" class="darkmode-bg">
+              <img
+                src="https://mcusercontent.com/f02c9d6db43ae46218645f073/images/c5c295c1-ec46-8a96-e82e-179df7074143.png"
+                width="600" height="78" alt="alt_text" border="0" style="
+                    width: 100%;
+                    max-width: 600px;
+                    height: auto;
+                    background: #dddddd;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #555555;
+                    margin: auto;
+                    display: block;
+                  " class="g-img" />
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]> </td> <td valign="top" width="190"> <![endif]-->
+        <!--=================End Header Section==============-->
+        <!--=================Start GiftCard Section==============-->
+        <div class="gift-card-area">
+          <div class="hero-area custom-padding" style="
+                margin: 0 auto;
+                max-width: 600px;
+                display: flex;
+              ">
+            <!--Gift Card Text-->
+            <div class="gift-card-text">
+              <!--Gift Card Heading-->
+              <div class="gift-card-heading" style="
+                    display: flex;
+                  ">
+                <h1 class="headingText" style="
+                      font-size: 34px;
+                      font-weight: 500;
+                      line-height: 120%;
+                      color: #000000;
+                    ">
+                  ACTION NEEDED
+                </h1>
+                <img class="amazon-mobile" src="https://i.ibb.co/8brqy10/Group.png" alt="warning"
+                  style="margin-top: 10px" />
+              </div>
+              <!--/// End Gift Card Heading-->
+              <div class="gift-card-details" style="padding: 10px 0px 15px">
+                <p style="
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #000000;
+                    letter-spacing: 0.15px;
+                    line-height: 150%;
+                  ">
+                  {{provider_name}}<br/>DMG is moving <b>all work</b> to our new dedicated Provider Platform DMG Pro. You will no longer receive jobs through MyDivisions.<br/><br/> Tap the link below to download our new mobile app and start receiving jobs.
+                </p>
+              </div>
+            </div>
+            <!--/// End Gift Card Text-->
+            <!--Gift Card Image-->
+            <div class="gift-card-img">
+              <img class="amazon-pc" src="https://i.ibb.co/8brqy10/Group.png" alt="warning" />
+            </div>
+            <!--/// End Gift Card Image-->
+          </div>
+        </div>
+        <!--Sign UP Button-->
+        <div class="sign-up-button custom-padding">
+          <a class="sign-up" href="{{link}}" style="
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #fff;
+            background: #0067f9;
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0px 2px 2px rgba(0, 0, 0, 0.14),
+              0px 1px 5px rgba(0, 0, 0, 0.12);
+            border-radius: 70px;
+            padding: 6px 16px;
+            display: inline-block;
+          ">Download App</a>
+        </div>
+        <!--/// End Sign UP Button-->
+        <!--=================End GiftCard Section==============-->
+
+        <!--=================Start Social Media Section==============-->
+        <div
+          class="social-media-area"
+          style="
+            border-top: 2px solid #eeeeee;
+            border-bottom: 2px solid #eeeeee;
+            padding: 35px 0px;
+            margin: 25px 0px;
+          "
+        >
+          <div class="container">
+            <div class="social-media">
+              <ul
+                style="
+                  margin: 0 auto;
+                  list-style: none;
+                "
+              >
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.facebook.com/DivisionsMG"
+                    ><img src="https://i.ibb.co/DrWMWPV/facebook.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.instagram.com/divisionsmg/"
+                    ><img src="https://i.ibb.co/BjmSjPQ/instgram.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.linkedin.com/company/divisions-maintenance-group"
+                    ><img src="https://i.ibb.co/pL51JJz/linkden.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://twitter.com/DivisionsHQ"
+                    ><img src="https://i.ibb.co/QptJQnx/twitter.png" alt="icon"
+                  /></a>
+                </li>
+                <li style="padding: 0px 7.5px; display: inline;">
+                  <a
+                    class="social-media-item"
+                    href="https://www.youtube.com/channel/UCQ35u2cC1OzhKESsosiN31A"
+                    ><img src="https://i.ibb.co/GRjSZzQ/youtube.png" alt="icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--=================End Social Media Section==============-->
+        <!--=================End Footer Section==============-->
+        <div class="main-footer-area custom-padding">
+          <div class="container">
+            <div class="footer-item">
+              <!--Copy right-->
+              <div class="copyright-area">
+                <p
+                  style="
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 143%;
+                    letter-spacing: 0.15px;
+                    color: #45413c;
+                    text-align: center;
+                  "
+                >
+                  Copyright © 2022 Divisions Maintenance Group, All rights resereved
+                </p>
+              </div>
+              <!--Copy right-->
+              <!--Address-->
+              <div class="address" style="margin: 17px 0px">
+                <p
+                  style="
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 143%;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    color: #45413c;
+                  "
+                >
+                  Mailing Address: <br />
+                  300 Dave Cowens Drive <br />Newport, KY 41071
+                </p>
+              </div>
+              <!--/// End Address-->
+              <!--Other Footer Text-->
+              <div class="footer-text" style="padding-bottom: 32px">
+                <p
+                  style="
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 143%;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    color: #45413c;
+                  "
+                >
+                  Want to change how you receive these emails?
+                </p>
+                <br />
+                <p
+                  style="
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 143%;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    color: #45413c;
+                  "
+                >
+                  You can
+                  <a href="#" style="text-decoration: underline; color: #45413c"
+                    >update your preferences</a
+                  >
+                  or
+                  <a href="#" style="text-decoration: underline; color: #45413c"
+                    >unsubscribe from this list</a
+                  >
+                </p>
+              </div>
+              <!--/// End Other Footer Text-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=================End Footer Section==============-->
+    </center>
+  </body>
+</html>
